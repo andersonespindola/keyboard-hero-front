@@ -1,0 +1,31 @@
+.background {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  justify-content: center;
+}
+
+.time-left {
+  color: #f50057;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.counter {
+  max-height: 28px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
