@@ -52,7 +52,9 @@ export const ScoreTable = () => {
 
   useEffect(() => {
     const createRankingData = async () => {
-      const response = await axios.get('http://localhost:4000/player')
+      const response = await axios.get(
+        'https://keyboard-hero.herokuapp.com/player'
+      )
 
       if (!response.data) return []
 

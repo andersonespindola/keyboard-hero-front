@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 
 const saveScore = async (playerName: string, hits: number, errors: number) => {
   const data = { name: playerName, score: hits, fails: errors }
-  await axios.post('http://localhost:4000/player', data)
+  await axios.post('https://keyboard-hero.herokuapp.com/player', data)
 }
 
 export const Register: React.FC = () => {
